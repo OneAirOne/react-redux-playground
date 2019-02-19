@@ -1,0 +1,2 @@
+export const getCurrentVideoId = state => state.playerModule.currentVideo.id
+export const getCommentsOfCurrentVideo = state => state.commentModule.comments.filter(element => element.videoId === getCurrentVideoId(state))
